@@ -2,7 +2,7 @@
 package KI305.Kozak.Lab3;
 
 /**
- * Class driver for Lab 3 demonstration
+ *  Driver class for Lab 3 demonstration
  */
 public class App {
     /**
