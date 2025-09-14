@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 /**
  * Building class represents a building.
  * it contains - address, floors, area, elevator presense
- * in adition this class implements logging
+ * in addition this class implements logging
  */
 public class Building {
     /** Building's floors */
