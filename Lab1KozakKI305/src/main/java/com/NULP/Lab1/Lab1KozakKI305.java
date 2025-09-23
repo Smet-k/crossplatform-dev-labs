@@ -85,7 +85,7 @@ public class Lab1KozakKI305 {
         in.nextLine();
 
         System.out.print("Enter the filling symbol: ");
-        symbol = in.next();
+        symbol = in.nextLine();
 
         in.close();
         if (symbol.length() > 1 || symbol.length() == 0) {
