@@ -169,7 +169,7 @@ public class Building {
      */
     public void displayInfo() {
         log("Building info displayed.");
-        System.out.printf("Building info: %s, floors: %d, area: %fkm²", address, floors,  area);
+        System.out.printf("Building info: %s, floors: %d, area: %fm², ", address, floors,  area);
         System.out.printf("Has elevator: %s, current log file %s.\n", (hasElevator ? "Yes" : "No"), logFile);
     }
 
