@@ -9,19 +9,19 @@ public abstract class Building {
     /**
      * Building floor count.
      */
-    int floors = 0;
+    protected int floors = 0;
     /**
      * Building address.
      */
-    String address = "";
+    protected String address = "";
     /**
      * Building area.
      */
-    float area = 0.0f;
+    protected float area = 0.0f;
     /**
      * Is elevator present.
      */
-    boolean hasElevator = false;
+    protected boolean hasElevator = false;
 
     /**
      * Gets the presence of elevator
