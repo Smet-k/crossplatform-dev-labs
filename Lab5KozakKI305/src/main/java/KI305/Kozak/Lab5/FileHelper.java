@@ -57,9 +57,9 @@ public class FileHelper {
      * @throws FileNotFoundException if file couldn't be opened
      */
     public void writeTxt(double result) throws FileNotFoundException {
-        PrintWriter pw = new PrintWriter(new File(filename));
-        pw.printf("%f", result);
-        pw.close();
+        try (PrintWriter pw = new PrintWriter(new File(filename))) {
+            pw.printf("%f", result);
+        }
     }
 
     /**
@@ -84,9 +84,9 @@ public class FileHelper {
             if (!f.exists())
                 throw new FileNotFoundException("File" + filename + "not found.");
 
-            Scanner s = new Scanner(f);
-            result = s.nextDouble();
-            s.close();
+            try (Scanner s = new Scanner(f)) {
+                result = s.nextDouble();
+            }
 
         } catch (FileNotFoundException ex) {
             System.out.print(ex.getMessage());
@@ -102,9 +102,9 @@ public class FileHelper {
      * @throws IOException if there's issue writting to file
      */
     public void writeBin(double result) throws FileNotFoundException, IOException {
-        DataOutputStream f = new DataOutputStream(new FileOutputStream(filename));
-        f.writeDouble(result);
-        f.close();
+        try (DataOutputStream f = new DataOutputStream(new FileOutputStream(filename))) {
+            f.writeDouble(result);
+        }
     }
 
     /**
@@ -115,12 +115,8 @@ public class FileHelper {
      * @throws IOException if there's issue writting to file
      */
     public double readBin() throws FileNotFoundException, IOException{
-        double result = 0.0;
-        
-        DataInputStream f = new DataInputStream(new FileInputStream(filename));
-        result = f.readDouble();
-        f.close();
-
-        return result;
+        try (DataInputStream f = new DataInputStream(new FileInputStream(filename))) {
+            return f.readDouble();
+        }
     }
 }
