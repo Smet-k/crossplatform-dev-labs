@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI305.Kozak.Lab3","l":"App"},{"p":"KI305.Kozak.Lab3","l":"Building"},{"p":"KI305.Kozak.Lab3","l":"Loggable"},{"p":"KI305.Kozak.Lab3","l":"OfficeCentre"},{"p":"KI305.Kozak.Lab3","l":"Workplace"}];updateSearchResults();
