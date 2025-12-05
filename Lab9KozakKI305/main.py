@@ -1,5 +1,5 @@
-from building import Building
-from office_centre import OfficeCentre
+from building.building import Building
+from building.office_centre import OfficeCentre
 
 
 def main():
