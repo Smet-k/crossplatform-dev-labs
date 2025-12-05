@@ -1,4 +1,4 @@
-from building import Building
+from .building import Building
 
 # OfficeCentre represents a specialized builing
 # derived from building class
